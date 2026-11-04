@@ -1,0 +1,23 @@
+# GHDL
+*.o
+*.cf
+e~*.o
+
+# cocotb
+sim_build/
+results.xml
+__pycache__/
+
+# Waveforms
+*.vcd
+*.ghw
+*.fst
+
+# Quartus
+db/
+incremental_db/
+output_files/
+*.qws
+
+# macOS
+.DS_Store
