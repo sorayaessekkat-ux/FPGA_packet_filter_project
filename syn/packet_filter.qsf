@@ -1,0 +1,10 @@
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY packet_filter
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name VHDL_FILE ../rtl/filter_rules_pkg.vhd
+set_global_assignment -name VHDL_FILE ../rtl/header_parser.vhd
+set_global_assignment -name VHDL_FILE ../rtl/rule_engine.vhd
+set_global_assignment -name VHDL_FILE ../rtl/packet_filter.vhd
+set_global_assignment -name SDC_FILE packet_filter.sdc
