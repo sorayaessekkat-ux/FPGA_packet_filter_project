@@ -1,0 +1,30 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  simulation:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Install GHDL
+        run: sudo apt-get update && sudo apt-get install -y ghdl
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install cocotb and Scapy
+        run: pip install cocotb scapy
+
+      - name: Test the counter
+        run: cd tb/counter && make
+
+      - name: Test the header parser
+        run: cd tb/header_parser && make
+
+      - name: Test the packet filter
+        run: cd tb/packet_filter && make
