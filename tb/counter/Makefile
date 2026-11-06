@@ -3,7 +3,7 @@ SIM ?= ghdl
 TOPLEVEL_LANG = vhdl
 GHDL_ARGS += --std=08
 
-VHDL_SOURCES = $(PWD)/../rtl/counter.vhd
+VHDL_SOURCES = $(PWD)/../../rtl/counter.vhd
 
 # cocotb 2.x names
 COCOTB_TOPLEVEL = counter
