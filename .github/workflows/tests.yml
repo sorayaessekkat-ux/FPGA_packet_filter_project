@@ -27,4 +27,4 @@ jobs:
         run: cd tb/header_parser && make
 
       - name: Test the packet filter
-        run: cd tb/packet_filter && make
+        run: cd tb/packet_filter && makel
